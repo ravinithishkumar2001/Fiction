@@ -6,7 +6,7 @@ export const PageNotFound = () => {
       <img src={notfound} alt="" className="img-fluid w-50 d-block mx-auto"/>
     
     <p className="text-center">
-      <Link to="/" className="btn btn-primary">
+      <Link to="/Fiction" className="btn btn-primary">
       Go TO HOME PAGE
       </Link>
     </p>

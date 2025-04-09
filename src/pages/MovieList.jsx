@@ -20,19 +20,7 @@ return (
     <main className="container mt-5 bg-dark">
       {title=="Your Guide to Great Movies"?(<div className="bg-body-dark py-2 border border-dark mb-2">
         <h3 className="turquoise">Welcome to Fiction</h3>
-        <p className="text-light">Dive into a world of cinema with honest, insightful, and spoiler-free reviews on the latest blockbusters, hidden indie gems, timeless classics, and everything in between. Whether you're looking for your next movie night pick or just want to see what the buzz is about, we've got you covered.
-
-            💡 Explore:
-
-            In-depth reviews and ratings
-
-            Trending films and critic picks
-
-            Genre-wise recommendations
-
-            Community opinions and top charts
-
-            Join a community of movie lovers and discover cinema from a fresh perspective. Lights, camera… read on!</p>
+        <p className="text-light">Welcome to Fiction—your ultimate movie companion for discovering the best in cinema, from the latest blockbusters and trending hits to underrated indies and timeless classics. Whether you're searching for your next movie night pick or diving into genre-based recommendations, we’ve got you covered with honest, spoiler-free reviews, community insights, and curated lists. Explore, rate, and connect with fellow film lovers as you uncover stories that entertain, inspire, and stay with you.</p>
 
             <button className="btn btn-secondary" onClick={() => {
               navigator("/movies/upcoming")
