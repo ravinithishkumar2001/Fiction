@@ -78,7 +78,7 @@ img{
 .btn-s{
   border-color: red;
   box-shadow: 3px 3px black;
-  color: red`;
+  color: red;
   cursor: pointer;
 }
 .btn-t:active{

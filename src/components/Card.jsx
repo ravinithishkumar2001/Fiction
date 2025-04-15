@@ -8,10 +8,10 @@
       const image=poster_path?`https://image.tmdb.org/t/p/original${poster_path}`:backup
     return (
       
-      <div className="col  mb-4">
+      <div className="col  mb-4" style={{ boxShadow: "1px 1px 1px 1px rgba(0,0,0,10)"}}>
         <div className="card h-100 shadow-sm bg-dark d-flex flex-column text-overflow-1" title={title}>
           <Link to={`/movie/${id}`}><img src={image} alt="" className="card-img-top position-relative" /></Link>
-              <small className="position-absolute  end-0  bg-warning px-2 py-1" style={{ boxShadow: "0 0 8px rgba(0,0,0,0.5)",borderRadius: "0px 8px 0cdpx 8px" }}>
+              <small className="position-absolute  end-0  bg-warning px-2 py-1" style={{ boxShadow: " 2px rgba(0,0,0,0.5)",borderRadius: "0px 8px 0px 8px" }}>
                 <i className="bi bi-star-fill tiny-text  text-dark ">
                 <span> {movie.vote_average} / {movie.vote_count}</span>
                 <span> review</span>
