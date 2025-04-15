@@ -6,8 +6,8 @@ import {BrowserRouter} from "react-router-dom"
 import { ScrollToTop } from './hooks/ScrollToTop.jsx'
 
 createRoot(document.getElementById('root')).render(
-
-    <BrowserRouter>
+    
+    <BrowserRouter basename='/Fiction'>
     <ScrollToTop/>
       <App></App>
     </BrowserRouter>

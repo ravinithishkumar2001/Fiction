@@ -4,6 +4,7 @@ import {useParams} from "react-router-dom"
 import backup from "../assets/backup.jpg"
 import {convertMinutes} from "../utils/utils"
 
+
 export const MovieDetails = () => {
   const params = useParams()
   const [movie,setMovie]= useState([])
@@ -80,6 +81,20 @@ export const MovieDetails = () => {
           <a className="btn btn-warning" href={`https://imdb.com/title/${movie.imdb_id}/`}>
           View in IMDB
           </a>
+          <button className="btn btn-outline-danger mx-2 p-2 " onClick={() => {
+            const stored = JSON.parse(localStorage.getItem("watchedMovies")) || [];
+            const exists = stored.find((m) => m.id === movie.id);
+            if (!exists) {
+              localStorage.setItem("watchedMovies", JSON.stringify([...stored, movie]));
+              
+            } else {
+              alert("Already in Watched List!");
+            }
+          }}
+        >
+          Mark as Watched
+        </button>
+
         </div>
       </div>
     </main>

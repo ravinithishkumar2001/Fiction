@@ -9,7 +9,7 @@ export const MovieList = ({title,apiPath}) => {
  const {data:movies} =useFetch(apiPath)
  
   useEffect(() => {
-    document.title =title}
+    document.title =title},[title]
 )
 
 const navigator=useNavigate()
@@ -33,10 +33,12 @@ return (
       ""
     )}
       <h5 className="turquoise py-2 ">{title}</h5>
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 py-2">
-        {movies.map((movie) =>{
-          return <Card key={movie.id} movie={movie}/>
-          })}
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 py-2 " >
+              {movies.map((movie) => (
+              <div key={movie.id} className="col">
+                <Card movie={movie} />
+              </div>
+            ))}
         </div>
     </main>
   </div>

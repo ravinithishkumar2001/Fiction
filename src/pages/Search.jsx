@@ -18,7 +18,7 @@ export const Search = ({ apiPath }) => {
       <h5 className="turquoise">
         {movies.length==0?`No result found for ${queryTerm}`:`Result for ${queryTerm}`}
       </h5>
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 py-2">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 py-2">
         {movies.map((movie)=> {
           return <Card key={movie.id} movie={movie}/>
         })}

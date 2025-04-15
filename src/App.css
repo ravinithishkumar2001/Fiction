@@ -41,3 +41,15 @@ img{
 .bg-t{
   background-color:turquoise;
 }
+.list-group {
+  border: 2px solid red;
+}
+.text-sm{
+  text-size-adjust: auto;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.blk{
+  background: #000;
+}

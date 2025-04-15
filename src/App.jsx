@@ -1,11 +1,12 @@
 import "./App.css"
-import { Footer,Header } from "./components";
+import { Footer, Header } from "./components";
 import AllRoutes from "./routes/AllRoutes";
 
 function App() {
   return (
     <>
-    <Header/>
+   
+    <Header/> 
     <AllRoutes/>
     <Footer/>
     </>

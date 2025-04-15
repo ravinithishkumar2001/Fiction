@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <nav className="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
     <div className="container-fluid">
-      <NavLink to="/fiction" className="navbar-brand"> 
+      <NavLink to="/Fiction" className="navbar-brand"> 
         <i className="bi bi-film ms-3 me-3"> Fiction</i>
       </NavLink> 
       <button className="navbar-toggler" type="button"
@@ -21,7 +21,7 @@ export const Header = () => {
         <div className="collapse navbar-collapse" id="menu">
           <ul className="navbar-nav me-auto mb-2 mb-md-0">
             <li className="nav-item">
-              <NavLink to="/Fiction" className="nav-link">
+              <NavLink to="/" className="nav-link">
                 Home
               </NavLink>
             </li>
@@ -38,6 +38,11 @@ export const Header = () => {
             <li className="nav-item">
               <NavLink to="/movies/upcoming" className="nav-link">
                 Upcoming
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/movies/watched" className="nav-link">
+                Watched List
               </NavLink>
             </li>
           </ul>
