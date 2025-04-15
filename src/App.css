@@ -46,10 +46,51 @@ img{
 }
 .text-sm{
   text-size-adjust: auto;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
 }
 
 .blk{
   background: #000;
+}
+.no-underline {
+  text-decoration: none;
+}
+.btn-t{
+  border-color: turquoise;
+  color: turquoise;
+  box-shadow: 3px 3px black;
+}
+.btn-t:hover{
+  border-color: turquoise;
+  box-shadow: 3px 3px black;
+  color: black;
+  background: turquoise;
+  cursor: pointer;
+}
+.btn-s:hover{
+  border-color: red;
+  box-shadow: 3px 3px black;
+  color: black;
+  background: red;
+  cursor: pointer;
+}
+.btn-s{
+  border-color: red;
+  box-shadow: 3px 3px black;
+  color: red`;
+  cursor: pointer;
+}
+.btn-t:active{
+
+  transform: translateX(2px);
+  transform: translateY(2px);
+
+}
+
+
+.text-title{
+  color: white;
+  
+  text-shadow: 4px 4px black;
 }
